@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4a6ac617-df10-48bc-8a9b-315abde4834b" activeEnvironment="Default" name="Project 4" resourceRoot="" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="2fbd408e-1117-4c2b-a7bf-930146f77cfc" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8888" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8888</con:endpoint></con:endpoints><con:resource name="Student" path="/student" id="a27097c3-139e-4b9e-936d-b025c88668df"><con:settings/><con:parameters/><con:method name="Student 1" id="f202b4de-3550-46a5-85fe-eec08bdc7220" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="4bebfa08-cc58-473e-b164-1d1403e7eb61" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request/><con:originalUri>http://localhost/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4a434548-28f1-41ed-8b68-57b120ebd34f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8888" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8888</con:endpoint></con:endpoints><con:resource name="post" path="/student" id="184db587-ff11-41d9-a505-f95001f4a19e"><con:settings/><con:parameters/><con:method name="POSTRequest" id="0c719e43-bf61-403b-b527-a4fb0b0cd0ee" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:stud="http://localhost/student">stud:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="849b084e-b2dc-42cc-abd7-6504380dcbbd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request>	{
+		"id":"4849",
+		"student_name": "Dhansih",
+	    "student_password": "Dhansih",
+	    "student_email": "dhanish@gmail.com",
+	    "student_gender": "male"
+	 }</con:request><con:originalUri>http://localhost/student</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ee90db8e-3337-486a-a632-f551f394b465" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8888" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8888</con:endpoint></con:endpoints><con:resource name="PUT" path="/student/4849" id="42ddf257-dbe8-4cb3-9c10-e108fe1f7024"><con:settings/><con:parameters/><con:method name="PUTRequest" id="ee69d8ac-1dd2-4625-9830-75c6a397f0b7" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/student/4849">ns:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="c1820c4b-ca5f-40bd-9602-5f09349e5a40" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request>
+  {
+    "student_name": "Dhansih1234",
+    "student_password": "Dhansih",
+    "student_email": "dhanish@gmail.com",
+    "student_gender": "male"
+  }</con:request><con:originalUri>http://localhost/student/4849</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c198ed4e-b688-4075-a041-0035344b8614" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8888" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8888</con:endpoint></con:endpoints><con:resource name="PATCH" path="/student/4849" id="89f2de7a-4bc5-4ea3-9613-cbcc7ff2434d"><con:settings/><con:parameters/><con:method name="PATCHRequest" id="49dc720d-324e-40de-9925-1839cd1744b1" method="PATCH"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/student/1">ns:Response</con:element></con:representation><con:request name="Request 1" id="48af3959-3a6c-43aa-a480-ca671ec93007" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request>
+  {
+    "student_name": "Dhansih",
+    "student_password": "Dhansih1234"
+  }</con:request><con:originalUri>http://localhost/student/1</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a6118a2d-6792-4e7f-97a1-2236f9d21636" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8888" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:8888</con:endpoint></con:endpoints><con:resource name="Delete" path="/student/4849" id="9f01899d-8cc2-4774-b07b-ab34c806b745"><con:settings/><con:parameters/><con:method name="Delete" id="4b8d9ad1-0db5-4bb4-97b8-743b23c33d4a" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="http://localhost/student/4849">ns:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="2110a4c0-033c-4951-ad35-af86c0a815c0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request/><con:originalUri>http://localhost/student/4849</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="005a48c0-d05b-470f-8a92-d51051ea0ca1" name="Library"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="adfc84e1-7e3c-4a79-9742-97a193642a33" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateCSVReport" id="86df47ab-3c74-4dc6-ac06-42e350d8edb4"><con:settings/><con:config><script>// Try-catch block to handle exceptions
+try {
+
+// 1. Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+
+/* ------------------------------------------------------------------------------- */
+
+// 2. Create a subfolder (with timestamp) to store the request-response local copy 
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+
+      // Specify the subfolder path with name Request-Response_CurrentTimeStamp
+      String subfolderPath1 = folderPath+ "/Request-Response_"+executionDate;
+
+      // Create this sub-folder
+      new File(subfolderPath1).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 3. Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 4. Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case","Test Step","Step Type","Step Status",'
+                        +'"Result message","Execution Date"');
+      }
+/* ------------------------------------------------------------------------------- */
+// 5. Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step name
+   def testStepName = testStep.name
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   // Retrieve Test Step status
+   def status = stepResult.getStatus()
+
+   // Creating new line in report file
+   reportFile.append('\n');
+
+   // Write all the necessary information in the file
+   reportFile.append('"' + testSuite + '",');
+   reportFile.append('"' + testCase + '",');
+   reportFile.append('"' + testStepName + '",');
+   reportFile.append('"' + type + '",');
+   reportFile.append('"' + status + '",');
+
+   // Retrieve the test result messages
+   reportFile.append('"');
+   for(resMessage in stepResult.getMessages())
+   {
+     // Write messages and separate multiple messages by new line
+     reportFile.append('Message:' + resMessage + '\n');
+   }
+   reportFile.append('",');
+
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+/* ------------------------------------------------------------------------------- */
+// 6. Extract the request and response and save it to external file
+      // Verify if the test step type is request: SOAP project or restrequest: REST project
+        if((type=="request").or(type=="restrequest"))
+        {
+          // Extract the request from the test step
+          def extRequest = testStep.properties["Request"].value;    
+
+      // Create a file in the reports folder and write the request
+      // Naming convention: request_TestSuiteName_TestCaseName_TestStepName.txt
+      def requestFile=subfolderPath1+"/request_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rqfile = new File(requestFile);
+      rqfile.write(extRequest, "UTF-8");
+
+      // Extract the response from the test step
+      def extResponse = stepResult.getResponseContent();    
+
+      // Create a file in the reports folder and write the response
+      // Naming convention: response_TestSuiteName_TestCaseName_TestStepName.txt
+      def responseFile=subfolderPath1+"/response_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rsfile = new File(responseFile);
+      rsfile.write(extResponse, "UTF-8");
+     }
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="70afb6f9-c8b3-4ddd-951b-dc9bd0aff98b" name="TestSuite 2"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="5c2f970e-5812-4aef-af28-8fe87f496eda" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GET" id="7e06966c-f897-4ee0-9d25-cad9c3a7a80d"><con:settings/><con:config service="http://localhost:8888" resourcePath="/student" methodName="Student 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET" id="4bebfa08-cc58-473e-b164-1d1403e7eb61" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request/><con:originalUri>http://localhost/student</con:originalUri><con:assertion type="Simple Contains" id="0ff11562-36c4-4131-bd76-2a93e59f8c13" name="Contains"><con:configuration><token>student_name</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POSTRequest - Request 1" id="ed45ef26-2a8c-42a1-86be-e8c6d6fb1f81"><con:settings/><con:config service="http://localhost:8888" resourcePath="/student" methodName="POSTRequest" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POSTRequest - Request 1" id="849b084e-b2dc-42cc-abd7-6504380dcbbd" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request>	{
+		"id":"4849",
+		"student_name": "Dhansih",
+	    "student_password": "Dhansih",
+	    "student_email": "dhanish@gmail.com",
+	    "student_gender": "male"
+	 }</con:request><con:originalUri>http://localhost/student</con:originalUri><con:assertion type="Simple Contains" id="16d5fb34-6fbd-42aa-9666-4de152ddd9bc" name="Contains"><con:configuration><token>student_name</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PUTRequest - Request 1" id="c050f4d5-a257-4476-9e85-b9262e17b567"><con:settings/><con:config service="http://localhost:8888" resourcePath="/student/4849" methodName="PUTRequest" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUTRequest - Request 1" id="c1820c4b-ca5f-40bd-9602-5f09349e5a40" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request>
+  {
+    "student_name": "Dhansih1234",
+    "student_password": "Dhansih",
+    "student_email": "dhanish@gmail.com",
+    "student_gender": "male"
+  }</con:request><con:originalUri>http://localhost/student/4849</con:originalUri><con:assertion type="Simple Contains" id="28f11d32-b2f3-4f71-9a2b-8f1f53a4c2d3" name="Contains"><con:configuration><token>student_name</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="PATCHRequest - Request 1" id="d981a59e-7c1e-44a7-8359-3f4aedfcd031"><con:settings/><con:config service="http://localhost:8888" resourcePath="/student/4849" methodName="PATCHRequest" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PATCHRequest - Request 1" id="48af3959-3a6c-43aa-a480-ca671ec93007" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request>
+  {
+    "student_name": "Dhansih",
+    "student_password": "Dhansih1234"
+  }</con:request><con:originalUri>http://localhost/student/1</con:originalUri><con:assertion type="Simple Contains" id="5a002c14-38ae-4d7d-a526-8541144d0282" name="Contains"><con:configuration><token>student_name</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Delete - Request 1" id="1e66362a-12a2-480e-a164-23c05a5b06e6"><con:settings/><con:config service="http://localhost:8888" resourcePath="/student/4849" methodName="Delete" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete - Request 1" id="2110a4c0-033c-4951-ad35-af86c0a815c0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8888</con:endpoint><con:request/><con:originalUri>http://localhost/student/4849</con:originalUri><con:assertion type="Simple Contains" id="ebf73ea2-9697-4942-b39f-0c64efdfd213" name="Contains"><con:configuration><token>student_name</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:properties/><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
