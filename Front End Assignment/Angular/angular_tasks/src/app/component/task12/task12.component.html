@@ -1,0 +1,18 @@
+<p>task12 works!</p>
+
+<table>
+  <thead>
+    <tr border="1">
+      <th>Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.contact }}</td>
+    </tr>
+  </tbody>
+</table>

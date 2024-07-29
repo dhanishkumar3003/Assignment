@@ -1,0 +1,32 @@
+<p>task13 works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email">
+      <div *ngIf="form.get('email').invalid && form.get('email').touched">
+        <small *ngIf="form.get('email').errors.required">Email is required</small>
+        <small *ngIf="form.get('email').errors.email">Email is invalid</small>
+      </div>
+    </div>
+  
+    <div>
+      <label for="password">Password:</label>
+      <input id="password" type="password" formControlName="password">
+      <div *ngIf="form.get('password').invalid && form.get('password').touched">
+        <small *ngIf="form.get('password').errors.required">Password is required</small>
+        <small *ngIf="form.get('password').errors.minLength">Password must be at least 8 characters long</small>
+      </div>
+    </div>
+  
+    <div>
+      <label for="contact">Contact Number:</label>
+      <input id="contact" formControlName="contact">
+      <div *ngIf="form.get('contact').invalid && form.get('contact').touched">
+        <small *ngIf="form.get('contact').errors.required">Contact number is required</small>
+        <small *ngIf="form.get('contact').errors.pattern">Contact number must be 10 digits</small>
+      </div>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  

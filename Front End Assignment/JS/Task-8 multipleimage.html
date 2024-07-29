@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <img src="#"  alt="Select any one" id="image1">
+        <p id="text"></p>
+        <button type="button" onclick="change('one')">one</button>
+        <button type="button" onclick="change('two')">two</button>
+        <button type="button" onclick="change('three')">three</button>
+        <button type="button" onclick="change('four')">four</button>
+        <button type="button" onclick="change('five')">five</button>
+        <button type="button" onclick="change('six')">six</button>
+    </form>
+    <script>
+        function change(val){
+            if(val=="one"){
+                document.getElementById("image1").src="../assets/images/one.png";
+                document.getElementById("text").innerHTML="One";
+            }
+            if(val=="two"){
+                document.getElementById("image1").src="../assets/images/two.jfif";
+                document.getElementById("text").innerHTML="Two";
+            }
+            if(val=="three"){
+                document.getElementById("image1").src="../assets/images/three.jfif";
+                document.getElementById("text").innerHTML="Three";
+            }
+            if(val=="four"){
+                document.getElementById("image1").src="../assets/images/four.png";
+                document.getElementById("text").innerHTML="Four";
+            }
+            if(val=="five"){
+                document.getElementById("image1").src="../assets/images/five.jfif";
+                document.getElementById("text").innerHTML="Five";
+            }
+            if(val=="six"){
+                document.getElementById("image1").src="../assets/images/six.jfif";
+                document.getElementById("text").innerHTML="Six";
+            }
+        }
+    </script>
+</body>
+</html>

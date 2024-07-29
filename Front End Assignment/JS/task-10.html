@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel or Consonant</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vowel or Consonant Checker</h1>
+        <button onclick="checkAlphabet()">Check</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function checkAlphabet() {
+            let input = prompt("Enter an alphabet").toLowerCase();
+            let result = document.getElementById('result');
+
+            if (!input || input.length !== 1 || !input.match(/[a-z]/)) {
+                result.textContent = "Please enter a valid single alphabet.";
+                return;
+            }
+
+            let vowels = ['a', 'e', 'i', 'o', 'u'];
+            if (vowels.includes(input)) {
+                result.textContent = `${input.toUpperCase()} is a Vowel.`;
+            } else {
+                result.textContent = `${input.toUpperCase()} is a Consonant.`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <span id="fnameError" class="error"></span>
+        </br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error"></span>
+        </br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+        </br>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            <span id="contactError" class="error"></span>
+        </br>
+            <label>Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <span id="genderError" class="error"></span>
+        </br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formResult"></p>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Clear previous errors
+            let errors = {
+                fname: '',
+                password: '',
+                email: '',
+                contact: '',
+                gender: ''
+            };
+            
+            // Retrieve values
+            let fname = document.getElementById('fname').value.trim();
+            let password = document.getElementById('password').value;
+            let email = document.getElementById('email').value.trim();
+            let contact = document.getElementById('contact').value.trim();
+            let gender = document.getElementById('gender').value;
+
+            // Validate Last Name
+            if (fname.length < 2) {
+                errors.fname = 'Last name must be at least 2 characters long.';
+            }
+
+            // Validate Password
+            if (password.length < 6) {
+                errors.password = 'Password must be at least 6 characters long.';
+            }
+
+            // Validate Email
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                errors.email = 'Please enter a valid email address.';
+            }
+
+            // Validate Contact Number
+            let contactPattern = /^[0-9]{10}$/;
+            if (!contactPattern.test(contact)) {
+                errors.contact = 'Contact number must be exactly 10 digits long.';
+            }
+
+            // Validate Gender
+            if (!gender) {
+                errors.gender = 'Please select a gender.';
+            }
+
+            // Display Errors
+            document.getElementById('fnameError').textContent = errors.fname;
+            document.getElementById('passwordError').textContent = errors.password;
+            document.getElementById('emailError').textContent = errors.email;
+            document.getElementById('contactError').textContent = errors.contact;
+            document.getElementById('genderError').textContent = errors.gender;
+
+            // Display success message if no errors
+            if (!Object.values(errors).some(error => error !== '')) {
+                document.getElementById('formResult').textContent = 'Form submitted successfully!';
+                document.getElementById('formResult').className = 'success';
+            } else {
+                document.getElementById('formResult').textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>

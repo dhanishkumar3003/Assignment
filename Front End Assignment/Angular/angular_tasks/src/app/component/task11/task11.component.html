@@ -1,0 +1,9 @@
+<p>task11 works!</p>
+<div>
+  <img *ngIf="showImage" src="https://cdn.pixabay.com/photo/2015/04/04/19/13/one-706897_960_720.jpg" width="200" alt="one">
+
+  <img *ngIf="!showImage" src="https://cdn.pixabay.com/photo/2015/04/04/19/13/two-706896_1280.jpg" height="200" alt="two">
+    <br>
+    <br>
+    <button (click)="toggleImage()">Toggle Image</button>
+  </div>

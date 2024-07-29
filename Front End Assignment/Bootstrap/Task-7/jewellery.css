@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.image-name{
+    color: white;
+    text-align: center;
+}
+.gallery {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Default to 1 column for small screens */
+.gallery {
+    grid-template-columns: 1fr;
+}
+
+/* 2 columns for medium screens */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3 columns for large screens */
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

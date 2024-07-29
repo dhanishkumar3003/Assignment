@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <img src="../assets/images/GSFC_20171208_Archive_e002074~large.jpg" id="image1" alt="" width="400px" height="400px">
+        <p id="desc">Galaxy</p>
+        <button type="button" onclick="changeimage()">changeimage</button>
+    </form>
+    <script>
+        let countclick=0;
+        function changeimage(){
+            countclick+=1;
+            if (countclick%2==0)
+            {
+                document.getElementById("image1").src="../assets/images/GSFC_20171208_Archive_e000842~large.jpg";
+                document.getElementById("desc").innerHTML="Nebula";
+            }
+            else{
+                document.getElementById("image1").src="../assets/images/GSFC_20171208_Archive_e002074~large.jpg";
+                document.getElementById("desc").innerHTML="Galaxy";
+            }
+        }
+    </script>
+</body>
+</html>

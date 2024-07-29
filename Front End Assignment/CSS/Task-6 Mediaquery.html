@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .block{
+            width: 20%;
+            border: 2px green solid;
+            float: left;
+        }
+        @media screen and (max-width:1000px) {
+            .block{
+                width: 25%;
+            }
+            
+        }
+        @media screen and (max-width:900px) {
+            .block{
+                width: 33.33%;
+            }
+            
+        }
+        @media screen and (max-width:800px) {
+            .block{
+                width: 50%;
+            }
+            
+        }
+        @media screen and (max-width:700px) {
+            .block{
+                width:100%;
+            }
+            
+        } 
+        
+        .headerstyle{
+            text-align: center;
+            background-color: black;
+            border: 5px solid violet;
+            padding: 8px;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+
+        }
+        .logo{
+            border: 5px red solid;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 8px;
+            width: 10%;
+            height: 10%;
+        }
+        .title{
+            vertical-align: middle;
+            font-size: 100px;
+            color: red;
+            font-weight: 200;
+            text-transform: capitalize;
+            text-shadow: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header class="headerstyle">
+        <div >
+            <img class="logo" src="..\assets\images\favicon.jpg" alt="favicon">
+            <span class="title">Fruits</span>
+        </div>
+    </header>
+    <div class="block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga assumenda soluta ratione. Alias officia aspernatur enim tempore neque nostrum nihil nobis minima. Libero explicabo in ipsum sapiente quisquam, excepturi earum? Quibusdam sequi delectus ipsam minima nobis, tempore beatae, aliquid in veniam sed animi? Omnis nam totam itaque vitae quae quibusdam architecto. Quisquam adipisci reprehenderit incidunt id praesentium harum voluptas, ad temporibus autem neque aspernatur, consequuntur nam, mollitia voluptatibus nobis quia quos. Inventore vel provident voluptatem ducimus incidunt, labore ex dolorem a quas delectus obcaecati id dolorum corrupti quia porro voluptatibus, in et atque asperiores repellendus ipsa totam deleniti! Asperiores eaque unde animi. Quae obcaecati unde a perspiciatis, ea minima vitae natus earum qui ipsa laboriosam eum eius, cumque ut! Dolorum assumenda aliquam, deserunt hic a nobis cumque molestiae saepe delectus! Praesentium sint autem architecto eum blanditiis voluptatum pariatur labore repudiandae cum asperiores ullam soluta totam sunt beatae accusamus dolorum doloribus, molestiae fuga molestias harum. Quasi odio unde nobis esse velit quibusdam id tempora possimus eveniet, impedit rem nostrum commodi nihil dolor qui repudiandae, reprehenderit et ad explicabo iusto incidunt dignissimos ipsam, illum nam! Nisi, neque! Saepe quaerat ratione incidunt odit harum, fuga reiciendis iure quia veniam cupiditate voluptatem aliquam.</div>
+    <div class="block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga assumenda soluta ratione. Alias officia aspernatur enim tempore neque nostrum nihil nobis minima. Libero explicabo in ipsum sapiente quisquam, excepturi earum? Quibusdam sequi delectus ipsam minima nobis, tempore beatae, aliquid in veniam sed animi? Omnis nam totam itaque vitae quae quibusdam architecto. Quisquam adipisci reprehenderit incidunt id praesentium harum voluptas, ad temporibus autem neque aspernatur, consequuntur nam, mollitia voluptatibus nobis quia quos. Inventore vel provident voluptatem ducimus incidunt, labore ex dolorem a quas delectus obcaecati id dolorum corrupti quia porro voluptatibus, in et atque asperiores repellendus ipsa totam deleniti! Asperiores eaque unde animi. Quae obcaecati unde a perspiciatis, ea minima vitae natus earum qui ipsa laboriosam eum eius, cumque ut! Dolorum assumenda aliquam, deserunt hic a nobis cumque molestiae saepe delectus! Praesentium sint autem architecto eum blanditiis voluptatum pariatur labore repudiandae cum asperiores ullam soluta totam sunt beatae accusamus dolorum doloribus, molestiae fuga molestias harum. Quasi odio unde nobis esse velit quibusdam id tempora possimus eveniet, impedit rem nostrum commodi nihil dolor qui repudiandae, reprehenderit et ad explicabo iusto incidunt dignissimos ipsam, illum nam! Nisi, neque! Saepe quaerat ratione incidunt odit harum, fuga reiciendis iure quia veniam cupiditate voluptatem aliquam.</div>
+    <div class="block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga assumenda soluta ratione. Alias officia aspernatur enim tempore neque nostrum nihil nobis minima. Libero explicabo in ipsum sapiente quisquam, excepturi earum? Quibusdam sequi delectus ipsam minima nobis, tempore beatae, aliquid in veniam sed animi? Omnis nam totam itaque vitae quae quibusdam architecto. Quisquam adipisci reprehenderit incidunt id praesentium harum voluptas, ad temporibus autem neque aspernatur, consequuntur nam, mollitia voluptatibus nobis quia quos. Inventore vel provident voluptatem ducimus incidunt, labore ex dolorem a quas delectus obcaecati id dolorum corrupti quia porro voluptatibus, in et atque asperiores repellendus ipsa totam deleniti! Asperiores eaque unde animi. Quae obcaecati unde a perspiciatis, ea minima vitae natus earum qui ipsa laboriosam eum eius, cumque ut! Dolorum assumenda aliquam, deserunt hic a nobis cumque molestiae saepe delectus! Praesentium sint autem architecto eum blanditiis voluptatum pariatur labore repudiandae cum asperiores ullam soluta totam sunt beatae accusamus dolorum doloribus, molestiae fuga molestias harum. Quasi odio unde nobis esse velit quibusdam id tempora possimus eveniet, impedit rem nostrum commodi nihil dolor qui repudiandae, reprehenderit et ad explicabo iusto incidunt dignissimos ipsam, illum nam! Nisi, neque! Saepe quaerat ratione incidunt odit harum, fuga reiciendis iure quia veniam cupiditate voluptatem aliquam.</div>
+    <div class="block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga assumenda soluta ratione. Alias officia aspernatur enim tempore neque nostrum nihil nobis minima. Libero explicabo in ipsum sapiente quisquam, excepturi earum? Quibusdam sequi delectus ipsam minima nobis, tempore beatae, aliquid in veniam sed animi? Omnis nam totam itaque vitae quae quibusdam architecto. Quisquam adipisci reprehenderit incidunt id praesentium harum voluptas, ad temporibus autem neque aspernatur, consequuntur nam, mollitia voluptatibus nobis quia quos. Inventore vel provident voluptatem ducimus incidunt, labore ex dolorem a quas delectus obcaecati id dolorum corrupti quia porro voluptatibus, in et atque asperiores repellendus ipsa totam deleniti! Asperiores eaque unde animi. Quae obcaecati unde a perspiciatis, ea minima vitae natus earum qui ipsa laboriosam eum eius, cumque ut! Dolorum assumenda aliquam, deserunt hic a nobis cumque molestiae saepe delectus! Praesentium sint autem architecto eum blanditiis voluptatum pariatur labore repudiandae cum asperiores ullam soluta totam sunt beatae accusamus dolorum doloribus, molestiae fuga molestias harum. Quasi odio unde nobis esse velit quibusdam id tempora possimus eveniet, impedit rem nostrum commodi nihil dolor qui repudiandae, reprehenderit et ad explicabo iusto incidunt dignissimos ipsam, illum nam! Nisi, neque! Saepe quaerat ratione incidunt odit harum, fuga reiciendis iure quia veniam cupiditate voluptatem aliquam.</div>
+    <div class="block"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fuga assumenda soluta ratione. Alias officia aspernatur enim tempore neque nostrum nihil nobis minima. Libero explicabo in ipsum sapiente quisquam, excepturi earum? Quibusdam sequi delectus ipsam minima nobis, tempore beatae, aliquid in veniam sed animi? Omnis nam totam itaque vitae quae quibusdam architecto. Quisquam adipisci reprehenderit incidunt id praesentium harum voluptas, ad temporibus autem neque aspernatur, consequuntur nam, mollitia voluptatibus nobis quia quos. Inventore vel provident voluptatem ducimus incidunt, labore ex dolorem a quas delectus obcaecati id dolorum corrupti quia porro voluptatibus, in et atque asperiores repellendus ipsa totam deleniti! Asperiores eaque unde animi. Quae obcaecati unde a perspiciatis, ea minima vitae natus earum qui ipsa laboriosam eum eius, cumque ut! Dolorum assumenda aliquam, deserunt hic a nobis cumque molestiae saepe delectus! Praesentium sint autem architecto eum blanditiis voluptatum pariatur labore repudiandae cum asperiores ullam soluta totam sunt beatae accusamus dolorum doloribus, molestiae fuga molestias harum. Quasi odio unde nobis esse velit quibusdam id tempora possimus eveniet, impedit rem nostrum commodi nihil dolor qui repudiandae, reprehenderit et ad explicabo iusto incidunt dignissimos ipsam, illum nam! Nisi, neque! Saepe quaerat ratione incidunt odit harum, fuga reiciendis iure quia veniam cupiditate voluptatem aliquam.</div>
+</body>
+</html>
