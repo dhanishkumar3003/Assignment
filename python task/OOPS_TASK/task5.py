@@ -1,7 +1,7 @@
 class Arithmetic:
     def __init__(self) -> None:
-        value1=0
-        value2=0
+        self.value1=0
+        self.value2=0
     def Accept(self):
         self.value1=int(input("Enter value 1"))
         self.value2=int(input("Enter value 2"))
