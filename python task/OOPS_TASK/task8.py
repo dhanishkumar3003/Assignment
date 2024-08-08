@@ -24,20 +24,24 @@ class shoppingCart:
         for item,price in self.items.items():
             totalPrice+=price
         print(totalPrice)
-s=shoppingCart()
-while(True):
-    print("Enter 1 to add item")
-    print("Enter 2 to remove item")
-    print("Enter 3 to view cart")
-    print("Enter 4 to view total price")
-    choice=int(input("Enter your choice"))
-    if choice==1:
-        s.addItems()
-    elif choice==2:
-        s.removeItems()
-    elif choice==3:
-        s.totalItems()
-    elif choice==4:
-        s.totalPrice()
-    else:
-        break
+def main():
+    s=shoppingCart()
+    while(True):
+        print("Enter 1 to add item")
+        print("Enter 2 to remove item")
+        print("Enter 3 to view cart")
+        print("Enter 4 to view total price")
+        choice=int(input("Enter your choice"))
+        if choice==1:
+            s.addItems()
+        elif choice==2:
+            s.removeItems()
+        elif choice==3:
+            s.totalItems()
+        elif choice==4:
+            s.totalPrice()
+        else:
+            break
+
+if __name__ == "__main__":
+    main()
