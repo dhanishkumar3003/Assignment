@@ -12,6 +12,7 @@ def countstringfrequency(filename, searchstring):
     frequency = contentlower.count(searchstringlower)
 
     print(f"The string '{searchstring}' appears {frequency} times")
+    
 def main():
     filename = input("Enter the file name: ")
     searchstring = input("Enter the string to search for: ")
