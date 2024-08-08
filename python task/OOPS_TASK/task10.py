@@ -26,24 +26,6 @@ class Restaurant:
     def open_restaurant(self):
         print(f"The restaurant {self.restaurant_name} is open!")
 
-restaurant = Restaurant("Pasta Palace", "Italian")
-
-print(restaurant.restaurant_name)
-print(restaurant.cuisine_type)
-
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
-
-#9.2
-
-restaurant1 = Restaurant("Mani's Dum Biriyani", "Indian")
-restaurant2 = Restaurant("Food Paradise", "Chinese")
-restaurant3 = Restaurant("Dominos", "American")
-
-restaurant1.describe_restaurant()
-restaurant2.describe_restaurant()
-restaurant3.describe_restaurant()
-
 #9.3
 class User:
     def __init__(self, first_name, last_name, age, location, email):
@@ -62,11 +44,36 @@ class User:
     def greet_user(self):
         print(f"Hello, {self.first_name}! Welcome back.")
 
-user1 = User("Dhanish", "Kumar", 22, "Porur", "dhanish@gmail.com")
-user2 = User("Basil", "Ahemad", 22, "Navalur", "basil@gmail.com")
+def main():
+    #9.1
+        
+    restaurant = Restaurant("Pasta Palace", "Italian")
 
-user1.describe_user()
-user1.greet_user()
+    print(restaurant.restaurant_name)
+    print(restaurant.cuisine_type)
 
-user2.describe_user()
-user2.greet_user()
+    restaurant.describe_restaurant()
+    restaurant.open_restaurant()
+
+    #9.2
+
+    restaurant1 = Restaurant("Mani's Dum Biriyani", "Indian")
+    restaurant2 = Restaurant("Food Paradise", "Chinese")
+    restaurant3 = Restaurant("Dominos", "American")
+
+    restaurant1.describe_restaurant()
+    restaurant2.describe_restaurant()
+    restaurant3.describe_restaurant()
+
+    #9.3
+    user1 = User("Dhanish", "Kumar", 22, "Porur", "dhanish@gmail.com")
+    user2 = User("Basil", "Ahemad", 22, "Navalur", "basil@gmail.com")
+
+    user1.describe_user()
+    user1.greet_user()
+
+    user2.describe_user()
+    user2.greet_user()
+
+if __name__ == "__main__":
+    main()
