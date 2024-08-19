@@ -3,7 +3,6 @@
 
 {% block title %}HomePage{% endblock  %}
 {% block contents %}
-{% include "include/header.html" %}
 
 <style>
 
@@ -50,5 +49,4 @@ h3.post_description {
 <h3 class="post_description">{{ post.posted_at }}</h3>
 <h3 class="post_description">{{ post.posted_by }}</h3>
 
-{% include "include/footer.html" %}
 {% endblock contents %}

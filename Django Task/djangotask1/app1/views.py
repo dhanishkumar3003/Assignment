@@ -15,15 +15,19 @@ posts = [
 ]
 
 def home_page(request):
+    context = {
+        'postdata': posts,
+        'show_all': False, 
+    }
 
-    return render(request,"app1/landing.html",{
-                      "postdata":posts
-                   })
+    return render(request,"app1/landing.html",context)
 
 def post(request):
-    return render(request,"app1/posts.html",{
-                      "postdata":posts
-                   })
+    context = {
+        'postdata': posts,
+        'show_all': True, 
+    }
+    return render(request,"app1/posts.html",context)
 
 def aboutus(request):
     return render(request,"app1/aboutus.html",{
