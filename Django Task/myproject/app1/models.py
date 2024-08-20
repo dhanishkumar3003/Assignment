@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Posts(models.Model):
-    title = models.CharField(max_length=50)
-    description = models.CharField(max_length=500)
+    post_title = models.CharField(max_length=50)
+    post_description = models.CharField(max_length=500)
     image = models.URLField(max_length=500)
     posted_at = models.DateTimeField()
     posted_by = models.CharField(max_length=500)

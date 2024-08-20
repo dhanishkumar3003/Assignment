@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'djangotask1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'bookmanagement',
-        "USER":"root",
-        "PORT":3333,
-        "PASSWORD":"",
-        "HOST":"localhost",
+        'ENGINE'  : 'django.db.backends.sqlite3',
+        'NAME'    : 'bookmanagement',
+        "USER"    : "root",
+        "PORT"    : 3333,
+        "PASSWORD": "",
+        "HOST"    : "localhost",
     }
 }
 

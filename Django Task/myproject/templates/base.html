@@ -15,8 +15,9 @@
         <header class="d-flex justify-content-center py-3 border-bottom">
           <ul class="nav nav-pills">
             <li class="nav-item h1"><a href="/" class="nav-link "><b>Home</b></a></li>
-            <li class="nav-item h1"><a href="aboutus" class="nav-link "><b>About us</b></a></li>
+            {% comment %} <li class="nav-item h1"><a href="aboutus" class="nav-link "><b>About us</b></a></li> {% endcomment %}
             <li class="nav-item h1"><a href="posts" class="nav-link "><b>Posts</b></a></li>
+            {% comment %} <li class="nav-item h1"><a href="form" class="nav-link "><b>Form</b></a></li> {% endcomment %}
           </ul>
         </header>
       </div>
@@ -24,13 +25,9 @@
     {% block contents %}{% endblock contents %}
     
     <footer>
-        <div class="">
-            <h2>Follow Us</h2>
-            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-        </div>
-    </footer>
+      <div class="footer-container">
+          <p>&copy; {{ current_year }} All rights reserved.</p>
+      </div>
+  </footer>
 </body>
 </html>
