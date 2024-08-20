@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}HomePage{% endblock %}
+{% block contents %}
+<link rel="stylesheet" href="{% static "posts.css" %}">
+    <h1>Welcome to the home page of the Django Task1</h1>
+
+    {% include "include/viewposts.html" %}
+
+{% endblock contents %}
