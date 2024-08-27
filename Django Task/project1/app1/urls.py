@@ -7,6 +7,7 @@ urlpatterns = [
     path("form", views.CreateProfileView.as_view(), name='post_create'),
     path("addauthorform", views.CreateAuthorView.as_view(), name='author_create'),
     path("addcommentform", views.CreateCommentView.as_view(), name='comment_create'),
-    path('posts/<int:id>/', views.post_detail, name='post_detail'),
+    path("addtagsform", views.CreateTagView.as_view(), name='tag_create'),
+    path('posts/<slug:id>/', views.post_detail, name='post_detail'),
     path('success', views.success),
 ]

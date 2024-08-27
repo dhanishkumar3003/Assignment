@@ -48,7 +48,7 @@ def form(request):
 
 def post_detail(request, id):
     posts = Posts.objects.all()
-    post = get_object_or_404(posts, id=id)
+    post = get_object_or_404(posts, slug=id)
     return render(request, "app1/singlepost.html", {"post": post})
 
 
@@ -69,6 +69,12 @@ class CreateCommentView(CreateView):
     template_name = "app1/addcommentform.html"
     success_url ='/success'
     fields ="__all__"
-    
+
+class CreateTagView(CreateView):
+    model = TagLine
+    template_name = "app1/addtagsform.html"
+    success_url ='/success'
+    fields ="__all__"
+
 def success(request):
     return render(request, "app1/success.html")
