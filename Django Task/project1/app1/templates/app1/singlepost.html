@@ -14,9 +14,15 @@
         {% endfor %}
     </h3>
     
-    {% for comment in comments %}
-        {{  }}
-    {% endfor %}
+    {% if comments %}
+        <h3 class="post_description"><strong>Comments:</strong></h3>
+        {% for comment in comments %}
+            <p>{{ comment.text }}</p>
+        {% endfor %}
+    {% else %}
+        <p>No comments available.</p>
+    {% endif %}
+
     <h3 class="post_description"><strong>Author id:</strong> {{ post.author_id }}</h3>
 </center>
 {% endblock contents %}

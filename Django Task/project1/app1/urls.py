@@ -9,5 +9,6 @@ urlpatterns = [
     path("addcommentform", views.CreateCommentView.as_view(), name='comment_create'),
     path("addtagsform", views.CreateTagView.as_view(), name='tag_create'),
     path('posts/<slug:id>/', views.post_detail, name='post_detail'),
+    # path('posts/<int:id>/', views.post_detail, name='post_detail'),
     path('success', views.success),
 ]
