@@ -49,7 +49,8 @@ def form(request):
 def post_detail(request, id):
     posts = Posts.objects.all()
     post = get_object_or_404(posts, slug=id)
-    return render(request, "app1/singlepost.html", {"post": post})
+    comments = get_object_or_404(comments, post_id=id)
+    return render(request, "app1/singlepost.html", {"post": post,"comments":comments})
 
 
 class CreateProfileView(CreateView):

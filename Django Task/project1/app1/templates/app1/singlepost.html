@@ -13,6 +13,10 @@
             {{ tag.caption }}{% if not forloop.last %}, {% endif %}
         {% endfor %}
     </h3>
+    
+    {% for comment in comments %}
+        {{  }}
+    {% endfor %}
     <h3 class="post_description"><strong>Author id:</strong> {{ post.author_id }}</h3>
 </center>
 {% endblock contents %}
