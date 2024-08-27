@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 255, 223); /* Updated background color for better aesthetics */
+    font-family: Arial, sans-serif; /* Added a default font-family for better text rendering */
+}
+
+/* Form container styling */
+.form-container {
+    background-color: #fff; /* Using hex color for consistency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly increased shadow for better emphasis */
+    width: 100%;
+    max-width: 400px; /* Ensuring responsiveness */
+    margin: 50px auto;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Added color for better contrast */
+    font-size: 24px; /* Defined font size */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px; /* Slightly increased spacing for better readability */
+    font-weight: bold;
+    color: #333; /* Added color for consistency */
+}
+
+.form-container input[type="text"],
+.form-container input[type="textarea"] {
+    width: 100%; /* Using full width for better responsiveness */
+    padding: 12px; /* Increased padding for better usability */
+    margin-bottom: 15px;
+    border: 1px solid black; /* Slightly darker border for better visibility */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* Defined font size */
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Added smooth transition for hover effect */
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Post container styling */
+.post_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px; /* Added padding to prevent content from touching screen edges */
+}
+
+/* Individual post card styling */
+.post_card {
+    width: 100%;
+    max-width: 30%; /* Ensuring responsiveness */
+    margin: 15px; /* Increased margin for better spacing */
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Consistent shadow with form */
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+.post_card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.post_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.post_title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333; /* Added color for consistency */
+    font-weight: bold; /* Enhanced emphasis */
+}
+
+.post_description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5; /* Added line height for better readability */
+}
+
+/* Header styling */
+header {
+    background-color: #000;
+    padding: 10px; /* Added padding for better spacing */
+    color: white; /* Added text color for contrast */
+    text-align: center; /* Centered header content */
+    margin: 0 -12px; /* Ensuring header spans full width */
+}

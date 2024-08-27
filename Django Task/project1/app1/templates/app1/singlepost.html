@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}HomePage{% endblock  %}
+{% block contents %}
+<center>
+<img src="{{ post.image.url }}" width=400 height=400 alt="{{ post.title }}" class="post_image">
+<h2 class="post_description">{{ post.title }}</h2>
+<h3 class="post_description"><strong>Image Name:</strong> {{ post.image_name }}</h3>
+<h3 class="post_description"><strong>Posted at:</strong> {{ post.date }}</h3>
+<h3 class="post_description"><strong>Tags:</strong> {{ post.tags }}  </h3>
+<h3 class="post_description"><strong>Author id:</strong> {{ post.author_id	 }}  </h3>
+</center>
+{% endblock contents %}

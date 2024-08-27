@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Posts{% endblock  %}
+{% block contents %}
+
+<center>
+    <h1>Posts :</h1>
+</center>
+
+<!-- {% comment %} <link rel="stylesheet" href="{% static "app1.css" %}"> {% endcomment %}
+<link rel="stylesheet" href="{% static "posts.css" %}"> -->
+
+{% include "include/viewposts.html" %}
+{% endblock contents %}
