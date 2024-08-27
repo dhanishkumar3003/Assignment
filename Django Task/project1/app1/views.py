@@ -58,9 +58,6 @@ class CreateProfileView(CreateView):
     success_url ='/success'
     fields ="__all__"
 
-def success(request):
-    return render(request, "app1/success.html")
-
 class CreateAuthorView(CreateView):
     model = Author
     template_name = "app1/addauthorform.html"
@@ -72,3 +69,6 @@ class CreateCommentView(CreateView):
     template_name = "app1/addcommentform.html"
     success_url ='/success'
     fields ="__all__"
+    
+def success(request):
+    return render(request, "app1/success.html")

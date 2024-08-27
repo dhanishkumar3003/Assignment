@@ -5,6 +5,9 @@ class Author(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     email_address = models.CharField(max_length=50)
+    def __str__(self):
+        return f"Author name: {self.first_name} {self.last_name} "
+
 
 
 class Posts(models.Model):
@@ -15,8 +18,13 @@ class Posts(models.Model):
     tags = models.CharField(max_length=500)
     author = models.ForeignKey(Author, on_delete=models.CASCADE,default=1)
 
+    def __str__(self):
+        return f"Title: {self.title}"
+
 class Comment(models.Model):
     user_name = models.CharField(max_length=50)
     user_email = models.CharField(max_length=50)
     text = models.TextField(max_length=50)
     post = models.ForeignKey(Posts, on_delete=models.CASCADE,default=1)
+    def __str__(self):
+        return f"Comment: {self.text}"
