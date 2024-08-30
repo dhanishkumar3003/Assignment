@@ -17,7 +17,8 @@
     {% if comments %}
         <h3 class="post_description"><strong>Comments:</strong></h3>
         {% for comment in comments %}
-            <p>{{ comment.text }}</p>
+            <p>Comment : {{ comment.text }}</p>
+            <p>Posted by : {{ comment.user_name }}</p>
         {% endfor %}
     {% else %}
         <p>No comments available.</p>

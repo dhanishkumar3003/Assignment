@@ -1,0 +1,66 @@
+what are the packages installed
+Django 
+MysqlClient for database
+drf-yasg for swagger
+pillow for image
+pyjwt for handling tokens
+
+what are the field 
+charfield
+textfield
+datefield
+timefield
+fielfield
+slugfield
+
+makemigrations 
+It searches for changes in the models.py and generateion new migration file in the migrations folder
+
+migrate
+it searches the files in the migrations directory 
+It runs sql querry to update the changes to the database schema
+
+what is rest framework
+It is used for serialization 
+They can be used to convert the object data from the database into the python native data format that is dictionry format
+Then it can be further converted into json or xml data
+we can perform crud opetion 
+
+what is the use of drf_yasg (Django Rest Framework)
+it is used for generation api documention
+
+what is serializer.py
+
+changes made in settings.py
+
+changes made in urls.py
+
+what is swagger
+
+where does it get data in "post.image.url"
+it gets the data about the file location from the database
+it then gets the image from the uploads folder
+
+
+what is interpolation{{}}
+used to get the value from the .py file to the html code and display it
+
+what is the use of the includes 
+
+in url
+it is used to include the app url in the base project urls
+
+in html
+it is used to include the repeting html code in different html files
+
+
+what is class meta
+it is the behaviour change of the class
+
+what is the use fo default router
+ it is used for generating url pattern for handling multiple request types (GET, POST, PUT, DELETE, etc.) into a single class, providing CRUD (Create, Read, Update, Delete) 
+
+what is model view set
+it is a class based
+
+what is unique validator
